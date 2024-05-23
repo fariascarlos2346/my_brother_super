@@ -63,5 +63,34 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
 
+h3 {
+    color:blue;
+}
+
+.fale-conosco {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+input {
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid Gray;
+    padding-left: 10px;
+    outline-color: chartreuse;
+}
+
+textarea {
+    height: 90px;
+    width: 300px;
+    border-radius: 3px;
+    border: 2px solid Gray;
+    padding: 10px;
+    outline-color: chartreuse;
 }
