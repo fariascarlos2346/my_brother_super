@@ -67,7 +67,7 @@ button {
 }
 
 h3 {
-    color:blue;
+    color:rgb(3, 3, 138);
 }
 
 .fale-conosco {
@@ -79,6 +79,8 @@ h3 {
     gap: 20px;
     position: fixed;
     left: -330px;
+    transition: left 1s linear;
+    z-index: 4;
 }
 
 input {
@@ -96,4 +98,14 @@ textarea {
     border: 2px solid Gray;
     padding: 10px;
     outline-color: chartreuse;
+}
+
+.mascara-form {
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 17, 0.99) 85%);
 }

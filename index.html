@@ -18,12 +18,11 @@
     <div class="caixa-principal">
         <img src="img/logo03.png" class="logo03" alt="logo do super brother">
         <p>Desenvolvedores Carlos e Lusia - Resolvendo Seus Problemas, criando 
-            soluções para seu negocio.
-        </p>
+         </p>
         <p>Você já se encontrou em uma situação de emergência com seu código, 
             temos soluções rapidas,praticas e com velocidade e retorno garantido.
         </p>
-        <button href="tel+5583996245391">Fala comigo</button>
+        <button onclick="cliqueiNoBotao()" href="tel+5583996245391">Fala comigo</button>
     </div>
 
     <img src="img/varias_logo.png" class="varias" alt="logo my brother">
@@ -33,11 +32,24 @@
         <input placeholder="Seu nome" type="text">
         <input placeholder="Seu telefone" type="tel">
         <textarea placeholder="Digite seu problema aqui"></textarea>
-        <button>Enviar Formulário</button>
+        <button onclick="sumirFormulario()">Enviar Formulário</button>
     </form>
+
+    <div class="mascara-form"></div>
 </body>
 <script>
-    
+    let formulario = document.querySelector(".fale-conosco")
+    let mascara = document.querySelector(".mascara-form")
+
+    function cliqueiNoBotao() {
+        formulario.style.left = "700px"
+        mascara.style.visibilily = "visible"
+    }
+
+    function sumirFormulario() {
+        formulario.style.left = "-330"
+        mascara.style.visibility = "hidden"
+    }
 </script>
 
 </html>
